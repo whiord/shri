@@ -1,0 +1,23 @@
+.quest
+{
+	width: 100%;
+}
+
+.quest_question
+{
+	background-color: #E1E09B;
+	margin: 3px;
+	padding: 5px;
+	padding-left: 20px;
+	width: 35%;
+	vertical-align: top;
+}
+
+.quest_answer
+{
+	background-color: #DBDA9E;
+	margin: 3px;
+	padding: 5px;
+	padding-left: 20px;
+	width: 65%;
+}

@@ -1,43 +1,306 @@
-
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ru" lang="ru">
+<!DOCTYPE html>
 
 <head>
 	<title>ШРИ</title>
 	<meta http-equiv="content-type" content="text/html;charset=utf-8" />
    
-   <script type="text/javascript" src = "js/chat_api.js"></script>
+    <script type="text/javascript" src = "jquery-1.8.1.min.js"></script>
+    <script type="text/javascript" src = "blocks/section/section.js"></script>
    
-   <link rel="stylesheet" type="text/css" href="blocks/window/window.css"> </link>
+    <link rel="stylesheet" type="text/css" href="blocks/header/header.css"> </link>
+    <link rel="stylesheet" type="text/css" href="blocks/body/body.css"> </link>
+    <link rel="stylesheet" type="text/css" href="blocks/section/section.css"> </link>
+    <link rel="stylesheet" type="text/css" href="blocks/content/content.css"> </link>
+    <link rel="stylesheet" type="text/css" href="blocks/quest/quest.css"> </link>
+    
 </head>
 
 
-<body>
-	<div class="header window"> Анкета и вступительное задание в ШРИ </div>
-    <div class="body window"> 
-        <div class="section">
-            <div class="section_header">
-                Общие вопросы
+<body style="background-color: #E0FAF6">
+    <div class="body">
+        <div class="header"> Анкета и вступительное задание в ШРИ </div>
+        <div class="content"> 
+            <div class="section">
+                <div class="section_header">
+                    Общие вопросы
+                </div>
+                <div class="section_body">
+                    <table class="quest">
+                        <tbody>
+                            <tr>
+                                <td class="quest_question">
+                                    Фамилия, имя, отчество
+                                </td>
+                                <td class="quest_answer">
+                                    Елисеев Владислав Юрьевич
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="quest_question">
+                                    Е-mail
+                                </td>
+                                <td class="quest_answer">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="quest_question">
+                                    Телефон
+                                </td>
+                                <td class="quest_answer">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="quest_question">
+                                    Год рождения
+                                </td>
+                                <td class="quest_answer">
+                                    1991
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="quest_question">
+                                    Город, в котором живёте
+                                </td>
+                                <td class="quest_answer">
+                                    Москва
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="quest_question">
+                                    Вуз, факультет, специальность, кафедра
+                                </td>
+                                <td class="quest_answer">
+                                    Факультет Вычислительной Математики и Кибернетики МГУ им. М. В. Ломоносова, прикладная математика и информатика, кафедра системного программирования
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="quest_question">
+                                    Год окончания вуза
+                                </td>
+                                <td class="quest_answer">
+                                    2014
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="quest_question">
+                                    На каком уровне владеете английским языком?
+                                </td>
+                                <td class="quest_answer">
+                                    средний, техническая литература
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="quest_question">
+                                    Чего вы ожидаете от участия в Школе?
+                                </td>
+                                <td class="quest_answer">
+                                    получения новых знаний и навыков, возможности устроиться на стажировку
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="quest_question">
+                                    Откуда вы о нас узнали?
+                                </td>
+                                <td class="quest_answer">
+                                    ВКонтакте
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="quest_question">
+                                    Сколько времени вы были бы готовы уделять стажировке или работе в Яндексе?
+                                </td>
+                                <td class="quest_answer">
+                                    свободное от учебы время, более 20 часов в неделю
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
-            <div class="section_body">
-                
+            <div class="section">
+                <div class="section_header">
+                    Опыт разработки
+                </div>
+                <div class="section_body" style="display:none">
+                    <table class="quest">
+                        <tbody>
+                            <tr>
+                                <td class="quest_question">
+                                    Расскажите нам о вашем опыте разработки. Ничего не упускайте: это может быть как серьезный интерфейс, так и просто домашняя страничка.
+                                </td>
+                                <td class="quest_answer">
+                                    Писал приложения, связанные с компьютерной графикой - небольшие графические редакторы, 3D-сцены с использованием OpenGL, алгоритмы трассировки лучей. Изучал некоторые аспекты искусственного интеллекта, в частности - писал алгоритмы интеллектуальных агентов. 
+                                    <br/>
+                                    Из крупных проектов - создавал сайт для спецкурса по Web-программированию, на котором можно играть в карточного "дурака" с другими людьми (<a href="http://websem.emo.su/">http://websem.emo.su/</a>)
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="quest_question">
+                                    Какие языки программирования, фреймворки и технологии вы использовали? Сложились ли у вас личные предпочтения?
+
+                                </td>
+                                <td class="quest_answer">
+                                    Delphi\Pascal, C\C++, PHP, Scheme, JavaScript, Python. <br/>
+                                    CSS, HTML, AJAX, JSON, Qt, Visual Studio, MS-SQL, mySQL.
+                                    Понравились Qt, Python.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="quest_question">
+                                    Какие редакторы и среды разработки вы использовали? Чем обычно пользуетесь?
+                                </td>
+                                <td class="quest_answer">
+                                    Qt, Visual Studio, Sublime Text, Notepad++, Geany, CodeBlocks
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="quest_question">
+                                    С какими ОС приходилось сталкиваться? Для каких целей вы их использовали?
+                                </td>
+                                <td class="quest_answer">
+                                    XP, Win7, Ubuntu, Linux Mint. <br/>
+                                    В Ubuntu - в основном выполнял задания практикума, экспериментировал.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="quest_question">
+                                    Приходилось ли вам пользоваться системами контроля версий? Если да, то какими? Какая из них вам нравится больше всего?
+                                </td>
+                                <td class="quest_answer">
+                                    вообще - нет, сейчас попробовал Git :)
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="quest_question">
+                                    Использовали ли вы системы постановки и ведения задач?
+                                </td>
+                                <td class="quest_answer">
+                                    нет
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="quest_question">
+                                    Какие полезные для фронтенд-разработчика ресурсы вы используете и можете посоветовать?
+                                </td>
+                                <td class="quest_answer">
+                                    Справочники по стандартам HTML, CSS, JS. <br/>
+                                    Использую официальную документацию PHP, jQuery. <br/>
+                                    <a href="http://htmlbook.ru/ "> http://htmlbook.ru/ </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="quest_question">
+                                    Работали ли вы где-нибудь? Какие у вас были должностные обязанности? Есть ли опыт работы в команде?
+                                </td>
+                                <td class="quest_answer">
+                                    Нет, не работал. Имею небольшой опыт работы в команде.
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
-        </div>
-        <div class="section">
-            <div class="section_header">
-                Опыт разработки
-            </div>
-            <div class="section_body">
-                
-            </div>
-        </div>
-        <div class="section">
-            <div class="section_header">
-                Тех. задание
-            </div>
-            <div class="section_body">
-                
+            <div class="section">
+                <div class="section_header">
+                    Тех. задание
+                </div>
+                <div class="section_body" style="display:none">
+                    <table class="quest">
+                        <tbody>
+                            <tr>
+                                <td class="quest_question">
+                                    Перечислите известные вам инструменты и приёмы для отладки кода в разных браузерах. 
+                                </td>
+                                <td class="quest_answer">
+                                    Стандартные средства отладки, встроенные в браузеры. Приёмы - дебаг-вывод и трассировка.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="quest_question">
+                                    Опишите своими словами, что происходит в браузерах при клике на ссылку yandex.ru (полнота ответа – на ваше усмотрение). 
+                                </td>
+                                <td class="quest_answer">
+                                    Возникает событие DOM click() для этого элемента. Если был определен обработчик (например, через атрибут onclick) этого события - то вызывается он. 
+                                    Далее - если обработчик вернул значение true - то ссылка обрабатывается так, как и предписано стандартом
+                                     - посылается запрос (обычно HTTP) на сервер yandex.ru, браузер получает код страницы и дальше думает, что с ним делать: 
+                                    открывать в текущем окне, в новом и т.п. Если обработчик вернул false - то стандартное действие ссылки не срабатывает.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="quest_question">
+                                    Предположим, что мы представляем автосалон по продаже японских и немецких автомобилей. У нас есть базовые классы и примеры их использования. Допишите недостающий код.
+                                </td>
+                                <td class="quest_answer">
+                                <div class="section">
+                                    <div class="section_header">
+                                        Код JavaScript
+                                    </div>
+                                    <div class="section_body" style="display: none">
+                                         <blockquote style="margin: 0px; "><code><font size="2" face="Courier New" color="black"><font color="#008000">/**</font><br><font color="#008000"> * Создает экземпляр Машины</font><br><font color="#008000"> * @this {Car}</font><br><font color="#008000"> * @param {string} manufacturer Производитель</font><br><font color="#008000"> * @param {string} model Модель</font><br><font color="#008000"> * @param {number} year Год производство</font><br><font color="#008000"> */</font><br><font color="#0000ff">function</font> Car(manufacturer, model, year) {<br>&nbsp;&nbsp;<font color="#0000ff">this</font>.manufacturer = manufacturer;<br>&nbsp;&nbsp;<font color="#0000ff">this</font>.model = model;<br>&nbsp;&nbsp;<font color="#0000ff">if</font> (arguments.length == 2)<br>&nbsp;&nbsp;&nbsp;<font color="#0000ff">this</font>.year = <font color="#0000ff">new</font> Date().getFullYear();<br>&nbsp;&nbsp;<font color="#0000ff">else</font><br>&nbsp;&nbsp;&nbsp;<font color="#0000ff">this</font>.year = year;<br>}<br><br>Car.prototype.getInfo = <font color="#0000ff">function</font>(){<br>&nbsp;&nbsp;<font color="#0000ff">return</font> <font color="#0000ff">this</font>.manufacturer + <font color="#0000ff">this</font>.model + <font color="#0000ff">this</font>.year.toString();<br>}<br><br>Car.prototype.getDetailedInfo = <font color="#0000ff">function</font>(){<br>&nbsp;&nbsp;<font color="#0000ff">return</font> <font color="#A31515">'Производитель: '</font> + <font color="#0000ff">this</font>.manufacturer + <font color="#A31515">'. Модель: '</font> + <font color="#0000ff">this</font>.model + <font color="#A31515">'. Год: '</font> + <font color="#0000ff">this</font>.year.toString();<br>}<br><br>Car.prototype.toString = <font color="#0000ff">function</font>(){<br>&nbsp;&nbsp;<font color="#0000ff">return</font> <font color="#0000ff">this</font>.getInfo();<br>}<br><br><font color="#0000ff">var</font> bmw = <font color="#0000ff">new</font> Car(<font color="#A31515">"BMW"</font>, <font color="#A31515">"X5"</font>, 2010),<br>&nbsp;&nbsp;audi = <font color="#0000ff">new</font> Car(<font color="#A31515">"Audi"</font>, <font color="#A31515">"Q5"</font>, 2012),<br>&nbsp;&nbsp;toyota = <font color="#0000ff">new</font> Car(<font color="#A31515">"Toyota"</font>, <font color="#A31515">"Camry"</font>);<br><br><br><font color="#008000">/**</font><br><font color="#008000"> * Создает экземпляр Автосалона</font><br><font color="#008000"> * @this {CarDealer}</font><br><font color="#008000"> * @param {string} name Название автосалона</font><br><font color="#008000"> */</font><br><font color="#0000ff">function</font> CarDealer(name) {<br>&nbsp;&nbsp;<font color="#0000ff">this</font>.name = name;<br>&nbsp;&nbsp;<font color="#0000ff">this</font>.cars = [];<br>}<br><br><font color="#0000ff">var</font> yandex = <font color="#0000ff">new</font> CarDealer(<font color="#A31515">'Яндекс.Авто'</font>);<br><br>CarDealer.prototype.add = <font color="#0000ff">function</font>(){<br>&nbsp;&nbsp;<font color="#0000ff">for</font>(<font color="#0000ff">var</font> i=0; i&#60;arguments.length; i++) <br>&nbsp;&nbsp;&nbsp;&nbsp;<font color="#0000ff">this</font>.cars[<font color="#0000ff">this</font>.cars.length] = arguments[i];<br>&nbsp;&nbsp;<font color="#0000ff">return</font> <font color="#0000ff">this</font>;<br>}<br><br>yandex<br>&nbsp;&nbsp;.add(toyota)<br>&nbsp;&nbsp;.add(bmw, audi);<br><br><br><font color="#008000">/**</font><br><font color="#008000"> * Установить цену на машину</font><br><font color="#008000"> * @param {string} car идентификатор машины</font><br><font color="#008000"> * @param {string} price стоимость</font><br><font color="#008000"> */</font><br>CarDealer.prototype.setPrice = <font color="#0000ff">function</font>(car, price){<br>&nbsp;&nbsp;<font color="#0000ff">for</font>(<font color="#0000ff">var</font> i=0; i&#60;<font color="#0000ff">this</font>.cars.length; i++) <br>&nbsp;&nbsp;&nbsp;&nbsp;<font color="#0000ff">if</font> (<font color="#0000ff">this</font>.cars[i].getInfo() == car){<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#0000ff">this</font>.cars[i].price = price;<br>&nbsp;&nbsp;&nbsp;&nbsp;}<br>&nbsp;&nbsp;<font color="#0000ff">return</font> <font color="#0000ff">this</font>;<br>}<br><br>yandex<br>&nbsp;&nbsp;.setPrice(<font color="#A31515">'BMW X5 2010'</font>, <font color="#A31515">'€2000'</font>)<br>&nbsp;&nbsp;.setPrice(<font color="#A31515">'Audi Q5 2012'</font>, <font color="#A31515">'€3000'</font>)<br>&nbsp;&nbsp;.setPrice(<font color="#A31515">'Toyota Camry 2012'</font>, <font color="#A31515">'¥3000'</font>);<br><br><font color="#0000ff">function</font> getCountry() {<br>&nbsp;&nbsp;<font color="#0000ff">switch</font> (<font color="#0000ff">this</font>.manufacturer.toLowerCase()) {<br>&nbsp;&nbsp;&nbsp;&nbsp;<font color="#0000ff">case</font> <font color="#A31515">'bmw'</font>:<br>&nbsp;&nbsp;<font color="#0000ff">case</font> <font color="#A31515">'audi'</font>:<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#0000ff">return</font> <font color="#A31515">'Germany'</font>;<br><br>&nbsp;&nbsp;&nbsp;&nbsp;<font color="#0000ff">case</font> <font color="#A31515">'toyota'</font>:<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#0000ff">return</font> <font color="#A31515">'Japan'</font>;<br>&nbsp;&nbsp;}<br>}<br><br>CarDealer.prototype.list = <font color="#0000ff">function</font>(){<br>&nbsp;&nbsp;<font color="#0000ff">var</font> result = <font color="#A31515">""</font>;<br>&nbsp;&nbsp;<font color="#0000ff">if</font> (<font color="#0000ff">this</font>.cars.length &#62; 0){<br>&nbsp;&nbsp;&nbsp;&nbsp;result = <font color="#0000ff">this</font>.cars[0].getInfo();<br>&nbsp;&nbsp;&nbsp;&nbsp;<font color="#0000ff">for</font> (<font color="#0000ff">var</font> i = 1; i &#60; <font color="#0000ff">this</font>.cars.length; i++){<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;result += <font color="#A31515">', '</font> + <font color="#0000ff">this</font>.cars[i].getInfo();<br>&nbsp;&nbsp;&nbsp;&nbsp;}<br>&nbsp;&nbsp;}<br>&nbsp;&nbsp;<font color="#0000ff">return</font> result;<br>}<br><br>CarDealer.prototype.listByCountry = <font color="#0000ff">function</font>(country){<br>&nbsp;&nbsp;<font color="#0000ff">var</font> result = <font color="#A31515">""</font>;<br>&nbsp;&nbsp;<font color="#0000ff">var</font> new_list = [];<br>&nbsp;&nbsp;<font color="#0000ff">for</font> (<font color="#0000ff">var</font> i = 0; i &#60; <font color="#0000ff">this</font>.cars.length; i++){<br>&nbsp;&nbsp;&nbsp;&nbsp;<font color="#0000ff">if</font> (<font color="#0000ff">this</font>.cars[i].getCountry() == country)<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;new_list[new_list.length] = <font color="#0000ff">this</font>.cars[i];<br>&nbsp;&nbsp;}<br>&nbsp;&nbsp;<br>&nbsp;&nbsp;<font color="#0000ff">if</font> (new_list.length &#62; 0){<br>&nbsp;&nbsp;&nbsp;&nbsp;result = new_list[0].getInfo();<br>&nbsp;&nbsp;&nbsp;&nbsp;<font color="#0000ff">for</font> (<font color="#0000ff">var</font> i = 1; i &#60; new_list.length; i++){<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;result += <font color="#A31515">', '</font> + new_list[i].getInfo();<br>&nbsp;&nbsp;&nbsp;&nbsp;}<br>&nbsp;&nbsp;}<br>&nbsp;&nbsp;<font color="#0000ff">return</font> result;<br>}<br><br>yandex.list(); <font color="#008000">//BMW X5 2010, Audi Q5 2012, Toyota Camry 2012</font><br>yandex.listByCountry(<font color="#A31515">'Germany'</font>); <font color="#008000">//BMW X5 2010, Audi Q5 2012</font><br><br><font color="#008000">// @TODO: бонус! выводить список машин с ценой в рублях.</font><br></font><br><font size="1" color="gray">* This source code was highlighted with <a href="http://virtser.net/blog/post/source-code-highlighter.aspx"><font size="1" color="gray">Source Code Highlighter</font></a>.</font></code></blockquote>
+                                    </div>
+                                </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="quest_question">
+                                    Найдите все текстовые файлы (*.txt), в имени которых содержится «yandex», а в содержимом — «школа фронтенд-разработки». (предполагается работа с командной строкой)
+                                </td>
+                                <td class="quest_answer">
+                                    find . -name *yandex*.txt -type f -exec grep -e "школа фронтенд-разработки" -l {} \;
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="quest_question">
+                                    Дана программа, реализованная одновременно на Bash, Python и Perl. Программа принимает произвольное количество аргументов и печатает их количество. Нужно добавить опцию -v для verbose-режима, в котором дополнительно выводится значение каждого из аргументов.
+                                </td>
+                                <td class="quest_answer">
+                                <div class="section">
+                                    <div class="section_header">
+                                        Python
+                                    </div>
+                                    <div class="section_body" style="display: none">
+                                        <pre  style="white-space:pre-wrap">
+#!/usr/bin/env python
+
+import argparse
+
+parser = argparse.ArgumentParser(description='Print the number of arguments.')
+parser.add_argument('arguments', metavar='ARG', type=str, nargs='*', help='some arguments')
+parser.add_argument('-m', dest='message', default='', help='custom message')
+parser.add_argument('-v', dest='verbose', default=False, const=True, help='verbose mode', action="store_const")
+
+args = parser.parse_args()
+
+count = 0
+
+for a in args.arguments:
+  if (args.verbose):
+  print(a)
+
+count += 1
+
+if args.message != '':
+  print(args.message)
+
+print(count)
+</pre>
+                                </div>
+                                </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="quest_question">
+                                    Расскажите, в каком объёме и при каких обстоятельствах вы изучали следующие темы: языки программирования (императивные/декларативные, разные системы типов), структуры (классы, структуры данных, примитивные типы), парадигмы (события, ООП, параллельность/асинхронность, кеширование), алгоритмы (парсинг, сортировка, поиск), паттерны.
+                                </td>
+                                <td class="quest_answer">
+                                    В университете изучал Assembler, C\C++, Scheme, SQL. Проходил курс по языкам программированию и построению компиляторов. Сдавал курс по веб-программированию, для этого изучал PHP, JS, HTML, CSS и др. Структуры и алгоритмы изучал в Летней Компьютерной Школе, готовился к олимпиадам по спортивному программировани. Многое из перечисленного в вопросе изучал самостоятельно. В процессе написания курсовой изучал Python.
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
         </div>
     </div>

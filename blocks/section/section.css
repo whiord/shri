@@ -1,3 +1,31 @@
 .section
 {
+/*
+	background-color: #EAE8A5;
+	
+	padding: 10px;
+*/
+	border: 1px solid #BFBD4F;
+	margin: 5px;
+}
+
+.section_header
+{
+	background-color: #DDDB92;
+	padding: 5px;
+	padding-left: 10px;
+	font-variant: small-caps;
+	cursor: pointer;
+}
+
+.section_header:hover
+{
+	background-color: #CFCD87;
+}
+
+.section_body
+{
+	background-color: #E7E6A8;
+	border-top: 0px;
+	padding: 5px;
 }
